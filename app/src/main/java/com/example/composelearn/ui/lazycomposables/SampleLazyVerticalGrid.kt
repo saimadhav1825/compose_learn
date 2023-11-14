@@ -97,20 +97,138 @@ fun SampleCustomLazyVerticalGridSpan() {
         verticalArrangement = Arrangement.spacedBy(10.dp),
         horizontalArrangement = Arrangement.spacedBy(10.dp)
     ) {
-        items(list.size, span = {
-            GridItemSpan(
-                3
-            )
-        }) {
-            Box(
-                modifier = Modifier
-                    .background(Color.Blue, shape = RoundedCornerShape(10.dp))
-                    .height(100.dp),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "$it", color = Color.White
-                )
+        list.forEachIndexed { index, i ->
+            if (index == 0) {
+                item(span = {
+                    GridItemSpan(maxLineSpan)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
+            } else {
+                item(span = {
+                    GridItemSpan(1)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Preview(name = "default")
+@Composable
+fun SampleCustomLazyVerticalGridSpanWithCell() {
+    val list = (1..100).toList()
+    LazyVerticalGrid(
+        columns = object : GridCells {
+            override fun Density.calculateCrossAxisCellSizes(
+                availableSize: Int,
+                spacing: Int
+            ): List<Int> {
+                val firstColumn = (availableSize - spacing) * 2 / 3
+                val secondColumn = availableSize - spacing - firstColumn
+                return listOf(firstColumn, secondColumn)
+            }
+        },
+        contentPadding = PaddingValues(10.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        horizontalArrangement = Arrangement.spacedBy(10.dp)
+    ) {
+        list.forEachIndexed { index, i ->
+            if (index == 0) {
+                item(span = {
+                    GridItemSpan(maxLineSpan)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
+            } else {
+                item(span = {
+                    GridItemSpan(1)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Preview(name = "default")
+@Composable
+fun SampleCustomLazyVerticalGridSpanIndexWithCell() {
+    val list = (1..100).toList()
+    LazyVerticalGrid(
+        columns = GridCells.Fixed(3),
+        contentPadding = PaddingValues(10.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+        horizontalArrangement = Arrangement.spacedBy(10.dp)
+    ) {
+        list.forEachIndexed { index, i ->
+            if (index % 7 == 0) {
+                item(span = {
+                    GridItemSpan(maxLineSpan)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
+            } else {
+                item(span = {
+                    GridItemSpan(1)
+                }) {
+                    Box(
+                        modifier = Modifier
+                            .background(Color.Blue, shape = RoundedCornerShape(10.dp))
+                            .height(100.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$i", color = Color.White
+                        )
+                    }
+                }
             }
         }
     }

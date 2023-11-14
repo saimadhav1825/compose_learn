@@ -11,8 +11,6 @@ S
 build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 X
 (gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-j
-:app/src/main/java/com/example/composelearn/MainActivity.kt,6/0/607f911109fe69970a0c4090442dadcaf1f37d3b
 p
 @app/src/main/java/com/example/composelearn/api/UploadResponse.kt,f/3/f3313592598462b41f012e73f8e2a48d3ae77b69
 s

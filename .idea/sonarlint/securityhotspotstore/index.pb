@@ -5,8 +5,6 @@ A
 gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
 @
 build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
-j
-:app/src/main/java/com/example/composelearn/MainActivity.kt,6/0/607f911109fe69970a0c4090442dadcaf1f37d3b
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 p
