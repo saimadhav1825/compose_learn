@@ -1,4 +1,4 @@
-package com.example.composelearn.ui
+package com.example.composelearn.ui.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box

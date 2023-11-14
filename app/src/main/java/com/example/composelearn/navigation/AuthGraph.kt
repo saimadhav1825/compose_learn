@@ -6,7 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.example.composelearn.navigation.NavigationRouteConstant.LOGIN_SCREEN
 import com.example.composelearn.navigation.NavigationRouteConstant.SPLASH_SCREEN
-import com.example.composelearn.ui.SplashScreen
+import com.example.composelearn.ui.splash.SplashScreen
 import com.example.composelearn.ui.auth.LoginScreen
 
 fun NavGraphBuilder.authNavGraph(

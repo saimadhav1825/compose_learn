@@ -82,4 +82,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     implementation("com.google.dagger:hilt-android:2.48.1")
     annotationProcessor("com.google.dagger:hilt-compiler:2.48.1")
+
+    //Exoplayer
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
 }
