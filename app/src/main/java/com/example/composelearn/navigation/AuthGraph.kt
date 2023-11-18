@@ -4,21 +4,22 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.example.composelearn.navigation.NavigationRouteConstant.LOGIN_SCREEN
-import com.example.composelearn.navigation.NavigationRouteConstant.SPLASH_SCREEN
+import com.example.composelearn.navigation.NavigationRouteConstant.FIRST_SCREEN
+import com.example.composelearn.navigation.NavigationRouteConstant.SECOND_SCREEN
 import com.example.composelearn.ui.splash.SplashScreen
 import com.example.composelearn.ui.auth.LoginScreen
+import com.example.composelearn.ui.sampleScreens.FirstScreen
 
-fun NavGraphBuilder.authNavGraph(
+fun NavGraphBuilder.sampleGraph(
     navController: NavController
 ) {
-    navigation(startDestination = SPLASH_SCREEN, route = GraphConstant.AUTH_GRAPH) {
-        composable(SPLASH_SCREEN) {
-            SplashScreen {
-                navController.navigate(it)
+    navigation(startDestination = FIRST_SCREEN, route = GraphConstant.AUTH_GRAPH) {
+        composable(FIRST_SCREEN) {
+            FirstScreen {
+                navController.navigate(SECOND_SCREEN)
             }
         }
-        composable(LOGIN_SCREEN) {
+        composable(SECOND_SCREEN) {
             LoginScreen()
         }
     }

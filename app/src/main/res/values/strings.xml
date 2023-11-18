@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ComposeLearn</string>
+    <string name="placeholder_search">placeholder search</string>
+    <string name="search">Search</string>
+    <string name="align_your_body">align your body</string>
+    <string name="favorite_collections">favorite collections</string>
+    <string name="bottom_navigation_profile">profile</string>
+    <string name="bottom_navigation_home">home</string>
 </resources>
