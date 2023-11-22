@@ -6,4 +6,8 @@
     <string name="favorite_collections">favorite collections</string>
     <string name="bottom_navigation_profile">profile</string>
     <string name="bottom_navigation_home">home</string>
+    <string name="home_feed">home</string>
+    <string name="home_search">search</string>
+    <string name="home_cart">cart</string>
+    <string name="home_profile">profile\n</string>
 </resources>
