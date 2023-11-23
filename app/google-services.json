@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "717016182639",
+    "project_id": "composelearn",
+    "storage_bucket": "composelearn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717016182639:android:184352f74b4e840855429a",
+        "android_client_info": {
+          "package_name": "com.example.composelearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuiK3sJdIOpY9X7NHqorfPIMucwD-kW7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
