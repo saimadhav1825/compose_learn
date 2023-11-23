@@ -4,9 +4,10 @@ import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel
 import com.example.composelearn.ui.sampleScreens.WellnessTask
 import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
 @HiltViewModel
-class SampleViewModel : ViewModel() {
+class SampleViewModel @Inject constructor() : ViewModel() {
     private val _tasks = getWellnessTasks().toMutableStateList()
     val tasks: List<WellnessTask>
         get() = _tasks

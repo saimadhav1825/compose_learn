@@ -5,8 +5,6 @@
 `app/src/main/java/com/example/composelearn/ui/lazycomposables/SampleLazyVerticalStaggeredGrid.kt,4/a/4aa3cdc1816b4f9f27c2720433b34ca3277fa5b3
 t
 Dapp/src/main/java/com/example/composelearn/ui/splash/SplashScreen.kt,3/d/3dcf1f192c2ba4040ba9b4390408e96a474c57f7
-m
-=app/src/main/java/com/example/composelearn/SampleViewModel.kt,f/b/fba4eb85d1258a895000f304edf7bd4a864c605a
 z
 Japp/src/main/java/com/example/composelearn/ui/sampleScreens/ThirdScreen.kt,f/9/f96164aca5cec7eea5181511d43bc5754ca19e7c
 i
