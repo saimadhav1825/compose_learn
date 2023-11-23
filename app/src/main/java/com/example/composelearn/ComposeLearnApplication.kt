@@ -9,6 +9,7 @@ import dagger.hilt.android.HiltAndroidApp
 class ComposeLearnApplication: Application() {
     override fun onCreate() {
         super.onCreate()
+        instance = this
     }
 
     companion object {

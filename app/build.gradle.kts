@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("dagger.hilt.android.plugin")
     id("org.jetbrains.kotlin.plugin.serialization")
 }
 
@@ -21,6 +22,7 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -40,6 +42,7 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
@@ -95,6 +98,6 @@ dependencies {
     implementation("io.ktor:ktor-client-core:2.3.5")
 
     // compose-paging
-    implementation("androidx.paging:paging-compose:3.3.0-alpha02")
+    // implementation("androidx.paging:paging-compose:3.3.0-alpha02")
 
 }

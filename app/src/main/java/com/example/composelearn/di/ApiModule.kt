@@ -1,5 +1,6 @@
 package com.example.composelearn.di
 
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -19,7 +20,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.json.Json
 
 const val BASE_URL="https://api.api-ninjas.com"
-@dagger.Module
+@Module
 @InstallIn(SingletonComponent::class)
 object ApiModule {
 
