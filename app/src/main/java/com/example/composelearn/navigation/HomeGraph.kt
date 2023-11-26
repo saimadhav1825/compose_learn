@@ -4,9 +4,10 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.example.composelearn.musicapp.musicappUi.OnBoardingScreen
 import com.example.composelearn.navigation.NavigationRouteConstant.COLLECTIONS
-import com.example.composelearn.navigation.NavigationRouteConstant.FIRST_SCREEN
 import com.example.composelearn.navigation.NavigationRouteConstant.HOME
+import com.example.composelearn.navigation.NavigationRouteConstant.ON_BOARDING_SCREEN
 import com.example.composelearn.navigation.NavigationRouteConstant.PROFILE
 import com.example.composelearn.navigation.NavigationRouteConstant.SECOND_SCREEN
 import com.example.composelearn.ui.auth.LoginScreen
@@ -30,6 +31,11 @@ fun NavGraphBuilder.homeGraph(
         }
         composable(SECOND_SCREEN) {
             SecondScreen()
+        }
+        composable(ON_BOARDING_SCREEN) {
+            OnBoardingScreen{
+                navController.navigate(HOME)
+            }
         }
     }
 }

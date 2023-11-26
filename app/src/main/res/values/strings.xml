@@ -10,4 +10,7 @@
     <string name="home_search">search</string>
     <string name="home_cart">cart</string>
     <string name="home_profile">profile\n</string>
+    <string name="user_friendly_mp3_music_player_for_your_device">User Friendly mp3 music player for your device</string>
+    <string name="we_provide_better_audio_expericence_than_others">we provide better audio expericence than others</string>
+    <string name="listen_to_the_best_audio_music_with_us"><![CDATA[listen to the best  audio & music with us]]></string>
 </resources>

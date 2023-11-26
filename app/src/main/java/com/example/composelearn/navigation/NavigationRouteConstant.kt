@@ -10,4 +10,7 @@ object NavigationRouteConstant {
 
     //Auth Constants
     const val LOGIN_SCREEN = "loginScreen"
+
+    //Onboarding
+    const val ON_BOARDING_SCREEN = "onBoarding_screen"
 }

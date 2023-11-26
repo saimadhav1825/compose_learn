@@ -99,12 +99,12 @@ dependencies {
     implementation("io.ktor:ktor-client-content-negotiation:2.3.3")
     implementation("io.ktor:ktor-client-core:2.3.5")
 
-    // compose-paging
-    // implementation("androidx.paging:paging-compose:3.3.0-alpha02")
-
     //firebase notification
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-messaging-ktx:")
     implementation("com.google.firebase:firebase-analytics")
+
+    //Splash Screen Api
+    implementation("androidx.core:core-splashscreen:1.0.0-beta02")
 
 }

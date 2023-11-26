@@ -7,28 +7,19 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColors(
-    primary = Purple80,
-    secondary = PurpleGrey80,
+    primary = Color.White,
+    secondary = PurpleGrey80, background = Color.Black
 )
 
 private val LightColorScheme = lightColors(
-    primary = Purple40,
-    secondary = PurpleGrey40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = Color.Black,
+    secondary = PurpleGrey40, background = Color.White,
 )
 
 @Composable
@@ -50,6 +41,7 @@ fun ComposeLearnTheme(
     }
 
     MaterialTheme(
+        colors = colorScheme,
         typography = Typography,
         content = content
     )
