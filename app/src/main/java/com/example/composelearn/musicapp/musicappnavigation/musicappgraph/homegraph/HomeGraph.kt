@@ -5,6 +5,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.example.composelearn.musicapp.MusicAppScreen
+import com.example.composelearn.musicapp.musicappUi.homescreenui.HomeScreen
 import com.example.composelearn.musicapp.musicappUi.settingsmoduleui.SettingScreen
 import com.example.composelearn.navigation.GraphConstant
 import com.example.composelearn.navigation.NavigationRouteConstant
@@ -16,9 +17,7 @@ fun NavGraphBuilder.homeGraph(
 ) {
     navigation(startDestination = MusicAppScreen.Home.route, route = GraphConstant.HOME_GRAPH) {
         composable(NavigationRouteConstant.HOME) {
-            FirstScreen {
-                navController.navigate(NavigationRouteConstant.SECOND_SCREEN)
-            }
+            HomeScreen()
         }
         composable(MusicAppScreen.Favourite.route) {
             LoginScreen()
