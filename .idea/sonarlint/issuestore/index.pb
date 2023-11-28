@@ -69,3 +69,15 @@ x
 Happ/src/main/java/com/example/composelearn/viewmodels/SplashViewModel.kt,8/0/804ca03f3691c1d0349f018bc5ca39e6eedfa2fc
 h
 8app/src/main/java/com/example/composelearn/theme/Type.kt,6/d/6d43e976ec38b857b094ca6d54660ce21d3997a8
+r
+Bapp/src/main/java/com/example/composelearn/navigation/HomeGraph.kt,8/8/881d0ef32e39a905aa51060d48ac29eed271a647
+o
+?app/src/main/java/com/example/composelearn/musicapp/MusicApp.kt,1/4/1459f4aaaa40f9976887ab67ea8ce959841c9f38
+‚
+Rapp/src/main/java/com/example/composelearn/musicapp/musicappUi/OnBoardingScreen.kt,7/3/737e075b3762cdcc0037f141dd85be5d00e9b5ed
+¡
+qapp/src/main/java/com/example/composelearn/musicapp/musicappnavigation/musicappgraph/settinggraph/SettingGraph.kt,e/7/e779bc436e80b5a864ca54418d046ead9ae74e37
+‹
+[app/src/main/java/com/example/composelearn/musicapp/musicappviewmodels/SettingsViewModel.kt,d/d/dd07edd19f3ae7cf538bde32b390c8d7b540b349
+„
+Tapp/src/main/java/com/example/composelearn/ui/sampleScreens/StateInJetPackCompose.kt,6/7/67fb300383aa9768775a1fd7b4560fc3efacf947
