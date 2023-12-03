@@ -23,14 +23,8 @@ z
 Japp/src/main/java/com/example/composelearn/ui/sampleScreens/FirstScreen.kt,5/5/55b88964f00f1583fae6bc900149b18ccf178d30
 7
 gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
-Ö
-Uapp/src/main/java/com/example/composelearn/mypushnotification/PushNotificationUtil.kt,b/8/b8a51d75e4f58927019e56ea117b631f058d57b4
 H
 app/google-services.json,f/d/fd8d34b142d02ec743a8efefefd2c097961666e9
-à
-Xapp/src/main/java/com/example/composelearn/mypushnotification/PushNotificationService.kt,3/5/353acb7b3345d89442bf9df259f156a7e2141375
-@
-build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 F
 app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
 v
@@ -47,10 +41,6 @@ v
 Fapp/src/main/java/com/example/composelearn/musicapp/OnBoardingItems.kt,7/9/7907e6035af6c3f0477873735bc94fffb4793c5b
 {
 Kapp/src/main/java/com/example/composelearn/musicapp/utils/LocalDataUtils.kt,f/f/ff539318b08328faaf8197cca1f6394aba6a4700
-P
- app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
-D
-app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
 j
 :app/src/main/java/com/example/composelearn/MainActivity.kt,6/0/607f911109fe69970a0c4090442dadcaf1f37d3b
 x
@@ -75,3 +65,17 @@ qapp/src/main/java/com/example/composelearn/musicapp/musicappnavigation/musicapp
 [app/src/main/java/com/example/composelearn/musicapp/musicappviewmodels/SettingsViewModel.kt,d/d/dd07edd19f3ae7cf538bde32b390c8d7b540b349
 Ñ
 Tapp/src/main/java/com/example/composelearn/ui/sampleScreens/StateInJetPackCompose.kt,6/7/67fb300383aa9768775a1fd7b4560fc3efacf947
+~
+Napp/src/main/java/com/example/composelearn/musicapp/basemodels/SettingsItem.kt,c/a/ca345d78d0dc5bcf5538698e3551b08e8396ecc9
+â
+Yapp/src/main/java/com/example/composelearn/musicapp/musicappUi/homescreenui/HomeScreen.kt,3/e/3e533510b3a17e89e71a153136a269629690c9ca
+õ
+kapp/src/main/java/com/example/composelearn/musicapp/musicappnavigation/musicappgraph/homegraph/HomeGraph.kt,b/f/bf297207298cdf64b08590e03a106d13bc0e758c
+v
+Fapp/src/main/java/com/example/composelearn/musicapp/utils/CoilUtils.kt,0/b/0b4e31c1b53c9972e7f1b01706a58fe2ec899630
+i
+9app/src/main/java/com/example/composelearn/theme/Theme.kt,c/1/c10f87482ec4b56da5307c51742d31848771c002
+§
+tapp/src/main/java/com/example/composelearn/musicapp/musicappUi/homescreenui/homescreencomoponents/SuggestedScreen.kt,4/5/453fe4f2e0217f1db0f865c546e9c0a648fdb110
+ê
+`app/src/main/java/com/example/composelearn/musicapp/musicappUi/settingsmoduleui/SettingScreen.kt,3/5/358292c8a7bc3d59ebbd0c5154d4ed595a164809

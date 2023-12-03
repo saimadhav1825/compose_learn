@@ -21,6 +21,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomoponents.AlbumScreen
+import com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomoponents.ArtistScreen
+import com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomoponents.FoldersScreen
 import com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomoponents.SongsScreen
 import com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomoponents.SuggestedScreen
 import com.example.composelearn.theme.Orange
@@ -50,17 +53,17 @@ fun CustomTabLayout() {
         TabItem(
             title = "Artists",
             screen = {
-
+                ArtistScreen()
             },
         ), TabItem(
             title = "Album",
             screen = {
-
+                AlbumScreen()
             },
         ), TabItem(
             title = "Folders",
             screen = {
-
+                FoldersScreen()
             },
         )
 

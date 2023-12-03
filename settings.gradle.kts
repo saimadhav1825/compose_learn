@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ComposeLearn"
 include(":app")
- 
+include(":benchmark")
