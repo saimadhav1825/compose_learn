@@ -17,7 +17,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Divider
 import androidx.compose.material.Icon
@@ -46,15 +46,20 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.composelearn.R
+import com.example.composelearn.musicapp.musicappnavigation.musicappgraph.settinggraph.SettingRoute
 import com.example.composelearn.musicapp.musicappviewmodels.SettingsViewModel
 import com.example.composelearn.theme.ComposeLearnTheme
 import com.example.composelearn.theme.Orange
 
 @Composable
-fun SettingScreen() {
+fun SettingScreen(onNavigate: (String) -> Unit = {}) {
     val settingsViewModel = hiltViewModel<SettingsViewModel>()
     Column(modifier = Modifier.fillMaxSize()) {
-        CustomMusicAppBar(title = "Settings") {
+        CustomMusicAppBar(
+            leftIcon = R.drawable.baseline_library_music_24,
+            title = "Settings",
+            secondIcon = R.drawable.message_icon
+        ) {
 
         }
         Box(
@@ -118,23 +123,25 @@ fun SettingScreen() {
             mutableStateOf(false)
         }
         LazyColumn(contentPadding = PaddingValues(horizontal = 15.dp)) {
-            items(settingsViewModel.uiState.value.settingList) {
+            itemsIndexed(settingsViewModel.uiState.value.settingList) { index, item ->
                 Row(
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Image(
-                        painter = painterResource(id = it.icon),
+                        painter = painterResource(id = item.icon),
                         contentDescription = "icon",
                         colorFilter = ColorFilter.tint(MaterialTheme.colors.primary)
                     )
-                    Text(text = it.title, modifier = Modifier.weight(1f))
-                    if (it.isCheckBox) {
+                    Text(text = item.title, modifier = Modifier.weight(1f))
+                    if (item.isCheckBox) {
                         Switch(checked = isDarkMode, onCheckedChange = {
                             isDarkMode = !isDarkMode
                         })
                     } else {
-                        IconButton(onClick = { }) {
+                        IconButton(onClick = {
+                            if (index == 1) onNavigate.invoke(SettingRoute.NotificationScreen.name)
+                        }) {
                             Icon(
                                 imageVector = Icons.Default.ArrowForward,
                                 contentDescription = "Forward Icon"
@@ -206,7 +213,9 @@ fun CustomMusicAppBar(
 @Composable
 fun SettingScreenPreview() {
     ComposeLearnTheme {
-        SettingScreen()
+        SettingScreen {
+
+        }
     }
 
 }

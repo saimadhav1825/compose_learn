@@ -13,8 +13,6 @@ import com.example.composelearn.musicapp.musicappUi.recentplayedui.RecentSearchS
 import com.example.composelearn.musicapp.musicappUi.settingsmoduleui.SettingScreen
 import com.example.composelearn.navigation.GraphConstant
 import com.example.composelearn.navigation.NavigationRouteConstant
-import com.example.composelearn.ui.auth.LoginScreen
-import com.example.composelearn.ui.sampleScreens.FirstScreen
 
 fun NavGraphBuilder.homeGraph(
     navController: NavController, onBack: () -> Unit
@@ -32,7 +30,9 @@ fun NavGraphBuilder.homeGraph(
             PlayListScreen()
         }
         composable(MusicAppScreen.Settings.route) {
-            SettingScreen()
+            SettingScreen {
+                navController.navigate(it)
+            }
         }
         composable(HomeRoute.RecentPlayerScreen.route) {
             RecentPlayedScreen(onBack = onBack) {
@@ -40,7 +40,8 @@ fun NavGraphBuilder.homeGraph(
             }
         }
         composable(HomeRoute.RecentSearchScreen.route) {
-            RecentSearchScreen()
+            RecentSearchScreen(onBack)
         }
+
     }
 }

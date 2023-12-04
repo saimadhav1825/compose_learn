@@ -94,8 +94,8 @@ fun MusicApp() {
                     navController = navController,
                     startDestination = GraphConstant.HOME_GRAPH
                 ) {
-                    homeGraph(navController,onBack)
-                    settingGraph(navController)
+                    homeGraph(navController, onBack)
+                    settingGraph(navController, onBack)
                 }
             }
         }

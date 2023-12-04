@@ -136,13 +136,13 @@ fun FavouriteList() {
             }
         }
         items(list) {
-            FavouriteSongView()
+            FavouriteView()
         }
     }
 }
 
 @Composable
-fun FavouriteSongView(imageUrl: String = "https://picsum.photos/id/110/800/800") {
+fun FavouriteView(imageUrl: String = "https://picsum.photos/id/110/800/800") {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
@@ -195,5 +195,5 @@ fun FavouriteSongView(imageUrl: String = "https://picsum.photos/id/110/800/800")
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun FavouritePreview() {
-    FavouriteSongView()
+    FavouriteView()
 }

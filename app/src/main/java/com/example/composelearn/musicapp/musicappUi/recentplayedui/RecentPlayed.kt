@@ -4,16 +4,23 @@ import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composelearn.R
+import com.example.composelearn.musicapp.musicappUi.favouritescreenui.FavouriteView
 import com.example.composelearn.musicapp.musicappUi.settingsmoduleui.CustomMusicAppBar
 import com.example.composelearn.musicapp.musicappnavigation.musicappgraph.homegraph.HomeRoute
 
 
 @Composable
-fun RecentPlayedScreen(onBack: () -> Unit={}, onNavigate: (String) -> Unit={}) {
+fun RecentPlayedScreen(onBack: () -> Unit = {}, onNavigate: (String) -> Unit = {}) {
+
+    val list = List(20) {
+        it
+    }
     Column(modifier = Modifier.fillMaxSize()) {
         CustomMusicAppBar(
             leftIcon = R.drawable.back_icon,
@@ -25,6 +32,11 @@ fun RecentPlayedScreen(onBack: () -> Unit={}, onNavigate: (String) -> Unit={}) {
                 onNavigate.invoke(HomeRoute.RecentSearchScreen.route)
             }
         )
+        LazyColumn{
+            items(list){
+                FavouriteView()
+            }
+        }
     }
 }
 
