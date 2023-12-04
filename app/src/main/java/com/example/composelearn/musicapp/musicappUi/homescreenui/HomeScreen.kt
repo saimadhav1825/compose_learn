@@ -12,13 +12,13 @@ import com.example.composelearn.musicapp.musicappUi.settingsmoduleui.CustomMusic
 import com.example.composelearn.theme.ComposeLearnTheme
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(onNavigation: (String) -> Unit) {
     Column(modifier = Modifier.fillMaxSize()) {
         CustomMusicAppBar(leftIcon = R.drawable.baseline_library_music_24, title = "Music App") {
 
         }
 
-        CustomTabLayout()
+        CustomTabLayout(onNavigation)
     }
 }
 
@@ -27,7 +27,9 @@ fun HomeScreen() {
 @Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun HomeScreenPreview() {
-    ComposeLearnTheme{
-        HomeScreen()
+    ComposeLearnTheme {
+        HomeScreen{
+
+        }
     }
 }

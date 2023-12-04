@@ -26,19 +26,20 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.composelearn.musicapp.musicappnavigation.musicappgraph.homegraph.HomeRoute
 import com.example.composelearn.musicapp.utils.CoilApiImageView
 import com.example.composelearn.theme.Orange
 
 @Composable
-fun SuggestedScreen() {
+fun SuggestedScreen(onNavigation: (String) -> Unit) {
     val recentList = List(10) {
         "Song Id $it"
     }
     LazyColumn {
         item {
-            TitleSeeAllView(title = "Recent Played") {
-
-            }
+            TitleSeeAllView(title = "Recent Played", onSeeAllClick = {
+                onNavigation.invoke(HomeRoute.RecentPlayerScreen.route)
+            })
             Spacer(modifier = Modifier.height(10.dp))
         }
         item {
@@ -152,6 +153,8 @@ fun TitleSeeAllPreview() {
 @Preview(showBackground = true, uiMode = UI_MODE_NIGHT_YES)
 @Composable
 fun SuggestScreenPreview() {
-    SuggestedScreen()
+    SuggestedScreen{
+
+    }
 }
 

@@ -31,8 +31,8 @@ import com.example.composelearn.theme.ComposeLearnTheme
 sealed class MusicAppScreen(val route: String, val label: String, val icon: ImageVector) {
     data object Home : MusicAppScreen("home", "Home", Icons.Filled.Home)
     data object Favourite : MusicAppScreen("collection", "Favourites", Icons.Filled.Favorite)
-    data object PlayList : MusicAppScreen("user_profile", "PlayLists", Icons.Filled.PlayArrow)
-    data object Settings : MusicAppScreen("user_profile", "Settings", Icons.Filled.Settings)
+    data object PlayList : MusicAppScreen("playlists", "PlayLists", Icons.Filled.PlayArrow)
+    data object Settings : MusicAppScreen("settings", "Settings", Icons.Filled.Settings)
 }
 
 @Composable
@@ -94,7 +94,7 @@ fun MusicApp() {
                     navController = navController,
                     startDestination = GraphConstant.HOME_GRAPH
                 ) {
-                    homeGraph(navController)
+                    homeGraph(navController,onBack)
                     settingGraph(navController)
                 }
             }

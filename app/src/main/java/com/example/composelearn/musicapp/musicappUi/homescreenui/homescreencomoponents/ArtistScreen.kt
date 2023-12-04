@@ -31,8 +31,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composelearn.musicapp.utils.CoilApiImageView
 import com.example.composelearn.theme.ComposeLearnTheme
-import com.example.composelearn.theme.Orange
-
 @Composable
 fun ArtistScreen() {
     val list = List(20) {
