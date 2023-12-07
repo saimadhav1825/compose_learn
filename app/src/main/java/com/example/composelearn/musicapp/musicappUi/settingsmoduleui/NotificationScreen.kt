@@ -15,9 +15,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.composelearn.musicapp.musicappUi.basescreens.PlayBottomSheetDialog
 
 data class Notification(
     val title: String,
@@ -51,6 +56,9 @@ val notificationList =
 
 @Composable
 fun NotificationScreen(onBack: () -> Unit = {}) {
+    var isPlay by remember {
+        mutableStateOf(false)
+    }
     Column(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -69,7 +77,9 @@ fun NotificationScreen(onBack: () -> Unit = {}) {
                         Text(text = it.title, style = MaterialTheme.typography.h6)
                         Text(text = it.value)
                     }
-                    IconButton(onClick = { }) {
+                    IconButton(onClick = {
+                        isPlay = !isPlay
+                    }) {
                         Icon(
                             imageVector = Icons.Default.KeyboardArrowRight,
                             contentDescription = "arrow right"
@@ -78,6 +88,9 @@ fun NotificationScreen(onBack: () -> Unit = {}) {
                 }
             }
         }
+    }
+    if (isPlay) {
+        PlayBottomSheetDialog()
     }
 
 }

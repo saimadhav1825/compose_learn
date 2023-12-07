@@ -36,7 +36,7 @@ data class TabItem(
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun CustomTabLayout(onNavigation: (String) -> Unit) {
+fun CustomTabLayout(onNavigation: (String) -> Unit = {}) {
     val tabItems = listOf(
         TabItem(
             title = "Suggested",
@@ -120,7 +120,5 @@ fun CustomTabLayout(onNavigation: (String) -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun CustomTabView() {
-    CustomTabLayout {
-
-    }
+    CustomTabLayout()
 }

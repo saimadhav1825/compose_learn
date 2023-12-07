@@ -1,7 +1,5 @@
 package com.example.composelearn.musicapp.musicappviewmodels
 
-import android.view.View
-import androidx.compose.material.icons.Icons
 import androidx.lifecycle.ViewModel
 import com.example.composelearn.R
 import com.example.composelearn.musicapp.basemodels.SettingsItem
@@ -12,9 +10,7 @@ import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
 @HiltViewModel
-class SettingsViewModel @Inject constructor(
-
-):ViewModel() {
+class SettingsViewModel @Inject constructor():ViewModel() {
 
     private val _uiState = MutableStateFlow(SettingState())
     val uiState = _uiState.asStateFlow()
@@ -29,7 +25,6 @@ class SettingsViewModel @Inject constructor(
         SettingsItem(icon = R.drawable.backup_icon, title = "Backup"),
         SettingsItem(icon = R.drawable.notifications_icon, title = "Notification"),
         SettingsItem(icon = R.drawable.language_icon, title = "Language"),
-        SettingsItem(icon = R.drawable.dark_mode_icon, title = "Dark Mode", isCheckBox = true),
         SettingsItem(icon = R.drawable.share_icon, title = "Share App"),
         SettingsItem(icon = R.drawable.backup_icon, title = "Change Log"),
         SettingsItem(icon = R.drawable.privacy_icon, title = "Privacy Policy"),

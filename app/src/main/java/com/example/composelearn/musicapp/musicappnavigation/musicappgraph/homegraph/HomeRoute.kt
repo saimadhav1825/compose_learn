@@ -3,4 +3,5 @@ package com.example.composelearn.musicapp.musicappnavigation.musicappgraph.homeg
 sealed class HomeRoute(val route: String) {
     data object RecentPlayerScreen : HomeRoute("RecentPlayerScreen")
     data object RecentSearchScreen : HomeRoute("RecentSearchScreen")
+    data object PlayScreen : HomeRoute("PlayScreen")
 }

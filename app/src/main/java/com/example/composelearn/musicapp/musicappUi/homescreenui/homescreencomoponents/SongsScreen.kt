@@ -2,6 +2,7 @@ package com.example.composelearn.musicapp.musicappUi.homescreenui.homescreencomo
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,12 +18,17 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -31,6 +37,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.composelearn.musicapp.musicappUi.basescreens.PlayBottomSheetDialog
 import com.example.composelearn.musicapp.utils.CoilApiImageView
 import com.example.composelearn.theme.ComposeLearnTheme
 import com.example.composelearn.theme.Orange
@@ -42,7 +49,6 @@ fun SongsScreen() {
         it
     }
     LazyColumn(modifier = Modifier.fillMaxSize()) {
-
         item {
             Column(
                 modifier = Modifier
@@ -69,7 +75,9 @@ fun SongsScreen() {
 
         }
         items(list) {
-            SingleSongView()
+            SingleSongView {
+
+            }
         }
     }
 }
@@ -80,18 +88,23 @@ fun SongsScreen() {
 @Composable
 fun SongsScreenPreview() {
     ComposeLearnTheme {
-        SongsScreen()
+        SongsScreen ()
     }
 }
 
 
 @Composable
-fun SingleSongView(imageUrl: String = "https://picsum.photos/id/110/800/800") {
+fun SingleSongView(
+    imageUrl: String = "https://picsum.photos/id/110/800/800",
+    isPlay: () -> Unit
+) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 15.dp, vertical = 5.dp)
+            .padding(horizontal = 15.dp, vertical = 5.dp).clickable {
+                isPlay.invoke()
+            }
     ) {
         CoilApiImageView(
             imageUrl = imageUrl, modifier = Modifier
@@ -138,11 +151,13 @@ fun SingleSongView(imageUrl: String = "https://picsum.photos/id/110/800/800") {
                 tint = Color.White, modifier = Modifier.padding(2.dp)
             )
         }
-        Icon(
-            imageVector = Icons.Default.MoreVert,
-            contentDescription = "More Icon",
-            modifier = Modifier.padding(start = 5.dp)
-        )
+        IconButton(onClick = { isPlay.invoke() }) {
+            Icon(
+                imageVector = Icons.Default.MoreVert,
+                contentDescription = "More Icon",
+                modifier = Modifier.padding(start = 5.dp)
+            )
+        }
     }
 }
 
@@ -151,6 +166,8 @@ fun SingleSongView(imageUrl: String = "https://picsum.photos/id/110/800/800") {
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun SingleSongPreview() {
-    SingleSongView()
+    SingleSongView {
+
+    }
 }
 
