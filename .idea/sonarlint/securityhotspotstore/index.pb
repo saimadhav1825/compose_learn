@@ -609,3 +609,7 @@ w
 Gapp/src/main/java/com/example/composelearn/bottomnavigationapp/MyApp.kt,5/3/53464c60d1f64cd50e759bdd5d2343b6d979bc1b
 ‚
 Rapp/src/main/java/com/example/composelearn/bottomnavigationapp/MainDestinations.kt,b/2/b2e1a725aebd177a37d69b9e1c9326eaa3798545
+t
+Dapp/src/main/java/com/example/composelearn/learn/DeleteItemScreen.kt,8/e/8e5ec5c86a9559fa3503f118361ef887a45502e7
+w
+Gapp/src/main/java/com/example/composelearn/learn/DeleteItemViewModel.kt,5/4/54df011933ffa35442643a507c3628b4b7f4ddf8
