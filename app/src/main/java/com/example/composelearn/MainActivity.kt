@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.composelearn.bottomnavigationapp.MyApp
 import com.example.composelearn.musicapp.MusicApp
 import com.example.composelearn.theme.ComposeLearnTheme
 import com.example.composelearn.viewmodels.SplashViewModel
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             ComposeLearnTheme {
-                MusicApp()
+                MyApp()
             }
         }
     }

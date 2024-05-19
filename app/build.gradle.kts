@@ -113,5 +113,6 @@ dependencies {
     //Splash Screen Api
     implementation("androidx.core:core-splashscreen:1.0.0-beta02")
     implementation("androidx.profileinstaller:profileinstaller:1.3.0-alpha02")
+    implementation("com.google.code.gson:gson:2.9.1")
 
 }
