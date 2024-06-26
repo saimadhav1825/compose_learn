@@ -1,21 +1,27 @@
 
-Dkotlin:S6624C" Do not hardcode version numbers.(ôĞ¬úÿÿÿÿ8è½¥ÛÚ1
-Dkotlin:S6624D" Do not hardcode version numbers.(İ—¤‡şÿÿÿÿ8é½¥ÛÚ1
-Dkotlin:S6624E" Do not hardcode version numbers.(İúãİüÿÿÿÿ8é½¥ÛÚ1
-?kotlin:S6624L" Do not hardcode version numbers.(·€‡Ê8é½¥ÛÚ1
-Dkotlin:S6624M" Do not hardcode version numbers.(˜°Ö“üÿÿÿÿ8é½¥ÛÚ1
-?kotlin:S6624W" Do not hardcode version numbers.(•è™8é½¥ÛÚ1
-?kotlin:S6624Z" Do not hardcode version numbers.(è™ƒ¼8é½¥ÛÚ1
-Dkotlin:S6624]" Do not hardcode version numbers.(İúú›üÿÿÿÿ8é½¥ÛÚ1
->kotlin:S6624^" Do not hardcode version numbers.(ôã‡Z8é½¥ÛÚ1
-Dkotlin:S6624b" Do not hardcode version numbers.(”Ì¸Óøÿÿÿÿ8é½¥ÛÚ1
-Dkotlin:S6624e" Do not hardcode version numbers.(­úüŸøÿÿÿÿ8é½¥ÛÚ1
->kotlin:S6624f" Do not hardcode version numbers.(ªõ/8é½¥ÛÚ1
-Dkotlin:S6624g" Do not hardcode version numbers.(œ·Æõùÿÿÿÿ8é½¥ÛÚ1
-?kotlin:S6624h" Do not hardcode version numbers.(†ÃÔ„8é½¥ÛÚ1
-Dkotlin:S6624i" Do not hardcode version numbers.(±İ«…øÿÿÿÿ8é½¥ÛÚ1
-?kotlin:S6624j" Do not hardcode version numbers.(­®¡8ê½¥ÛÚ1
-?kotlin:S6624r" Do not hardcode version numbers.(û´‡é8ê½¥ÛÚ1
-Dkotlin:S6624s" Do not hardcode version numbers.(Á´ÙÀøÿÿÿÿ8ê½¥ÛÚ1
-?kotlin:S6624t" Do not hardcode version numbers.(ŒìİÀ8‚Œ§ÛÚ1
-Lkotlin:S6629A"(Group dependencies by their destination.(«±°¢ùÿÿÿÿ8ë½¥ÛÚ1
+jkotlin:S6624C" Do not hardcode version numbers.(ôĞ¬úÿÿÿÿ8¥Í¢µƒ2J$7fd6af62-de90-46ee-b771-22713c87b532
+jkotlin:S6624D" Do not hardcode version numbers.(İ—¤‡şÿÿÿÿ8¦Í¢µƒ2J$a9356a16-0050-4a18-a863-8ccbc6772144
+jkotlin:S6624E" Do not hardcode version numbers.(İúãİüÿÿÿÿ8¦Í¢µƒ2J$da7dc765-835d-4fad-830b-9857d12caa9a
+ekotlin:S6624L" Do not hardcode version numbers.(·€‡Ê8¦Í¢µƒ2J$a7423385-28f3-4315-8d9c-83b10e3c8a13
+jkotlin:S6624M" Do not hardcode version numbers.(˜°Ö“üÿÿÿÿ8¦Í¢µƒ2J$9a0188ed-547a-4c74-9d11-26456e748e47
+ekotlin:S6624W" Do not hardcode version numbers.(•è™8§Í¢µƒ2J$dff89b96-14ea-41b3-9c66-4a9981bfc744
+ekotlin:S6624Z" Do not hardcode version numbers.(è™ƒ¼8§Í¢µƒ2J$0333f7be-1ee5-4b75-8ffc-c53ac56cd4a0
+jkotlin:S6624]" Do not hardcode version numbers.(İúú›üÿÿÿÿ8§Í¢µƒ2J$c78f4caf-3e21-4389-8845-6e81a0810427
+dkotlin:S6624^" Do not hardcode version numbers.(ôã‡Z8§Í¢µƒ2J$54af6144-90cc-4f75-be6c-bd384799ecc9
+jkotlin:S6624b" Do not hardcode version numbers.(”Ì¸Óøÿÿÿÿ8§Í¢µƒ2J$951afd38-ebff-46ff-8bee-db2c71dc157f
+jkotlin:S6624e" Do not hardcode version numbers.(­úüŸøÿÿÿÿ8§Í¢µƒ2J$5aa54a6b-d798-425c-a1c7-6984bc5bc6e7
+dkotlin:S6624f" Do not hardcode version numbers.(ªõ/8§Í¢µƒ2J$2440a7b4-b5c5-42ae-9bdd-0b1ff89b2798
+jkotlin:S6624g" Do not hardcode version numbers.(œ·Æõùÿÿÿÿ8§Í¢µƒ2J$b08144a4-ec1a-4a6a-93d3-e57adda807da
+ekotlin:S6624h" Do not hardcode version numbers.(†ÃÔ„8§Í¢µƒ2J$0a54ab72-b23c-4326-98ff-5196137c889f
+jkotlin:S6624i" Do not hardcode version numbers.(±İ«…øÿÿÿÿ8§Í¢µƒ2J$6903188f-2cc3-4e4f-af13-213821b1c635
+ekotlin:S6624j" Do not hardcode version numbers.(­®¡8§Í¢µƒ2J$8f4a5fe3-07f9-4658-846c-6c8dc78eb6b7
+ekotlin:S6624r" Do not hardcode version numbers.(û´‡é8§Í¢µƒ2J$2478f86d-003b-4db4-a43b-bf4ba3a9abef
+jkotlin:S6624s" Do not hardcode version numbers.(Á´ÙÀøÿÿÿÿ8§Í¢µƒ2J$1cda1346-463e-4eb0-aa51-7d8c034a5484
+ekotlin:S6624t" Do not hardcode version numbers.(ŒìİÀ8§Í¢µƒ2J$9f63dd3d-a3dc-46dc-8b2d-5554dda07858
+ekotlin:S6624x" Do not hardcode version numbers.(ƒ¾Ô–8§Í¢µƒ2J$b9f24a03-e2ea-4966-bd7b-54f5a44c3d3f
+ekotlin:S6624y" Do not hardcode version numbers.(ÛÀ–8§Í¢µƒ2J$8777d676-dc84-4d08-a01b-409070b3473a
+ekotlin:S6624|" Do not hardcode version numbers.(Äè‡İ8§Í¢µƒ2J$ed7702b6-c968-4b53-93f3-5e3baf619a85
+jkotlin:S6624~" Do not hardcode version numbers.(áÎ¤¨ùÿÿÿÿ8§Í¢µƒ2J$18204bc0-a336-46db-a33c-032841684b84
+ekotlin:S6624" Do not hardcode version numbers.(»½8§Í¢µƒ2J$2cb3a50f-fd3a-46ea-8bb0-00c32d5de5c0
+fkotlin:S6624" Do not hardcode version numbers.(ÜŠ´Š8§Í¢µƒ2J$4bec9781-c879-4f42-ab2d-10370fd72ab1
+rkotlin:S6629A"(Group dependencies by their destination.(«±°¢ùÿÿÿÿ8¨Í¢µƒ2J$0bbca662-dde9-4efd-aadb-920130d2f698

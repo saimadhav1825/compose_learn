@@ -115,4 +115,16 @@ dependencies {
     implementation("androidx.profileinstaller:profileinstaller:1.3.0-alpha02")
     implementation("com.google.code.gson:gson:2.9.1")
 
+
+    //paging 3
+    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
+    implementation("androidx.paging:paging-compose:3.3.0-alpha02")
+
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }
