@@ -6,7 +6,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.example.composelearn.musicapp.musicappUi.settingsmoduleui.NotificationScreen
 import com.example.composelearn.musicapp.musicappnavigation.GraphConstants
-import com.example.composelearn.ui.auth.LoginScreen
 
 fun NavGraphBuilder.settingGraph(navController: NavController, onBack: () -> Unit = {}) {
     navigation(
